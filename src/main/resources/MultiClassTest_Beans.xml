@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Spring容器帮我们做了 new对象 的操作   -->
+    <bean id="mysqlImpl" class="com.quan.MultiClassTest.Utils.UserDaoMysqlImpl"/>
+    <bean id="oracleImpl" class="com.quan.MultiClassTest.Utils.UserDaoOracleImpl"/>
+    <bean id="emptyImpl" class="com.quan.MultiClassTest.Utils.UserDaoImpl"/>
+    <bean id="deleteAll" class="com.quan.MultiClassTest.Utils.UserDaoDeleteAll"/>
+
+    <bean id="UserServiceImpl" class="com.quan.MultiClassTest.service.UserServiceImpl">
+        <!--
+            ref: 引用Spring容器中创建好的对象
+            value：具体的值
+         -->
+        <property name="userDao" ref="oracleImpl"/>
+    </bean>
+
+    <import resource="beans.xml"/>
+
+    <alias name="UserServiceImpl" alias="user"/>
+
+</beans>
