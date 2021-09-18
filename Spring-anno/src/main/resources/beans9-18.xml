@@ -7,21 +7,16 @@
         http://www.springframework.org/schema/context
         https://www.springframework.org/schema/context/spring-context.xsd">
 
+    <!-- 指定要扫描的包，这个包下的注解就会生效 -->
+    <context:component-scan base-package="com.quan"/>
+    <!-- 注解的支持 -->
     <context:annotation-config/>
 
-    <bean id="cat1" class="com.quan.pojo.Cat"/>
-    <bean id="cat111" class="com.quan.pojo.Cat"/>
+<!--    以前是这样注入bean的，现在可以直接使用注解了！！！ -->
+<!--    <bean id="user" class="com.quan.pojo.User"/>-->
 
-    <bean id="dog" class="com.quan.pojo.Dog"/>
-
-    <!--
-        byname：会自动在容器上下文中查找，和自己对象 set 方法后面的值对应的 beanid
-    -->
-    <bean id="people" class="com.quan.pojo.People" autowire="byType">
-        <property name="name" value="Hilda_quan"/>
-        <!-- <property name="dog" ref="dog"/> -->
-        <!-- <property name="cat" ref="cat"/> -->
-    </bean>
-
+<!--    <bean id="user" class="com.quan.pojo.User">-->
+<!--        <property name="name" value="Hilda"/>-->
+<!--    </bean>-->
 
 </beans>

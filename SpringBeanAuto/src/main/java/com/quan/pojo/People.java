@@ -1,5 +1,11 @@
 package com.quan.pojo;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.lang.Nullable;
+
+import javax.annotation.Resource;
+
 /**
  * @ClassName: People
  * @Description:
@@ -7,7 +13,9 @@ package com.quan.pojo;
  * @date: 2021/9/16 20:26
  */
 public class People {
+    @Resource(name = "cat111")
     private Cat cat;
+
     private Dog dog;
     private String name;
 
@@ -15,15 +23,15 @@ public class People {
         return cat;
     }
 
-    public void setCat(Cat cat) {
-        this.cat = cat;
-    }
+//    public void setCat(Cat cat) {
+//        this.cat = cat;
+//    }
 
     public Dog getDog() {
         return dog;
     }
 
-    public void setDog(Dog dog) {
+    public void setDog(@Nullable Dog dog) {
         this.dog = dog;
     }
 
@@ -43,4 +51,5 @@ public class People {
                 ", name='" + name + '\'' +
                 '}';
     }
+
 }

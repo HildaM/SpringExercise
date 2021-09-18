@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SpringBeanAuto" />
+        <module name="Spring(2021-9-18)" />
       </profile>
     </annotationProcessing>
   </component>
