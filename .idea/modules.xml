@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Spring-anno/Spring(2021-9-18).iml" filepath="$PROJECT_DIR$/Spring-anno/Spring(2021-9-18).iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBeanAuto/Spring-02-BeanAuto.iml" filepath="$PROJECT_DIR$/SpringBeanAuto/Spring-02-BeanAuto.iml" />
+    </modules>
+  </component>
+</project>

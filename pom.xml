@@ -9,10 +9,11 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>SpringBeanAuto</module>
-        <module>Spring-anno</module>
-        <module>SpringBeanAuto---UsingAnnotation</module>
-        <module>UsingJavaConfig</module>
+        <module>Spring-02-BeanAuto</module>
+        <module>Spring-01-anno</module>
+        <module>Spring-02-BeanAuto---UsingAnnotation</module>
+        <module>Spring-03-UsingJavaConfig</module>
+        <module>Spring-04-proxy</module>
     </modules>
 
     <properties>

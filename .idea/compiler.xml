@@ -6,11 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Spring-02-BeanAuto---UsingAnnotation" />
-        <module name="Spring-03-UsingJavaConfig" />
-        <module name="Spring-02-BeanAuto" />
+        <module name="Spring-04-proxy" />
         <module name="Spring(2021-9-18)" />
+        <module name="Spring-anno" />
+        <module name="Spring-02-BeanAuto" />
+        <module name="SpringBeanAuto" />
+        <module name="UsingJavaConfig" />
+        <module name="SpringBeanAuto---UsingAnnotation" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Spring(2021-9-18)" target="8" />
+      <module name="Spring-02-BeanAuto" target="8" />
+      <module name="Spring-02-BeanAuto---UsingAnnotation" target="8" />
+      <module name="Spring-03-UsingJavaConfig" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
