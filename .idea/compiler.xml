@@ -6,9 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SpringBeanAuto" />
-        <module name="SpringBeanAuto---UsingAnnotation" />
-        <module name="UsingJavaConfig" />
+        <module name="Spring-02-BeanAuto---UsingAnnotation" />
+        <module name="Spring-03-UsingJavaConfig" />
+        <module name="Spring-02-BeanAuto" />
         <module name="Spring(2021-9-18)" />
       </profile>
     </annotationProcessing>
