@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="SpringBeanAuto" />
         <module name="SpringBeanAuto---UsingAnnotation" />
+        <module name="UsingJavaConfig" />
         <module name="Spring(2021-9-18)" />
       </profile>
     </annotationProcessing>
