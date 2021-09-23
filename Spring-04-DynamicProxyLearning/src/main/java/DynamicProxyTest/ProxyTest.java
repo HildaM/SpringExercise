@@ -99,6 +99,6 @@ public class ProxyTest {
 
         String belief1 = stuProxy.getBelief();
         System.out.println(belief1);
-        stuProxy.eat("null");
+        stuProxy.eat("饭堂");
     }
 }
