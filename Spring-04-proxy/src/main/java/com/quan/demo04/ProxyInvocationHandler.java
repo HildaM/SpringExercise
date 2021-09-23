@@ -25,6 +25,7 @@ public class ProxyInvocationHandler implements InvocationHandler {
     public Object getProxy() {
         return Proxy.newProxyInstance(
                 this.getClass().getClassLoader(),
+//                target.getClass().getClassLoader(),  这样也可以！！！
                 target.getClass().getInterfaces(),
                 this
         );

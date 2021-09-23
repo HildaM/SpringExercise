@@ -17,7 +17,7 @@ interface Human {
 }
 
 
-// 被代理类
+// 被代理类  ——  业务逻辑
 class SuperMan implements Human {
 
     @Override
@@ -43,7 +43,7 @@ class Student implements Human {
     }
 }
 
-
+// 创建动态代理类
 class ProxyFactory {
     // obj：被代理类的对象。
     // 调用此方法，返回一个代理类的对象（解决问题一）
