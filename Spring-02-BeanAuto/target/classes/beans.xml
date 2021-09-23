@@ -7,9 +7,11 @@
         http://www.springframework.org/schema/context
         https://www.springframework.org/schema/context/spring-context.xsd">
 
+    <!-- 指定要扫描的包，这个包下的注解就会生效 -->
+    <context:component-scan base-package="com.quan.pojo"/>
     <context:annotation-config/>
 
-    <bean id="cat1" class="com.quan.pojo.Cat"/>
+    <bean id="cat" class="com.quan.pojo.Cat"/>
     <bean id="cat111" class="com.quan.pojo.Cat"/>
 
     <bean id="dog" class="com.quan.pojo.Dog"/>
