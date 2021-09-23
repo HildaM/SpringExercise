@@ -2,25 +2,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>SpringExercise</artifactId>
+        <groupId>org.example</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
-    <artifactId>SpringExercise</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>Spring-02-BeanAuto</module>
-        <module>Spring-01-anno</module>
-        <module>Spring-02-BeanAuto---UsingAnnotation</module>
-        <module>Spring-03-UsingJavaConfig</module>
-        <module>Spring-04-proxy</module>
-        <module>Spring-04-DynamicProxyLearning</module>
-    </modules>
+    <artifactId>Spring-04-DynamicProxyLearning</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
+
 
     <!-- 引入Spring框架依赖 -->
     <dependencies>
@@ -31,7 +26,4 @@
         </dependency>
     </dependencies>
 
-
 </project>
-
-
