@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Spring-04-proxy" />
+        <module name="Spring-05-AOP" />
         <module name="Spring(2021-9-18)" />
         <module name="Spring-04-DynamicProxyLearning" />
         <module name="Spring-anno" />
