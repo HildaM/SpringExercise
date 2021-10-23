@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="address" class="com.quan.pojo.Address"/>
+
+    <bean id="student" class="com.quan.pojo.Student">
+        <!-- 第一种：普通值注入，value -->
+        <property name="name" value="Hilda_quan"/>
+
+        <!-- 第二种：Bean注入，ref-->
+        <property name="address" ref="address"/>
+
+        <!-- 数组注入：ref -->
+        <property name="books">
+            <array>
+                <value>红楼梦</value>
+                <value>华强卖瓜</value>
+                <value>西游记</value>
+            </array>
+        </property>
+
+        <!-- list注入 -->
+        <property name="hobbys">
+            <list>
+                <value>旅游</value>
+                <value>画画</value>
+                <value>社交</value>
+            </list>
+        </property>
+
+        <!-- map注入 -->
+        <property name="card">
+            <map>
+                <entry key="身份证" value="123456789"/>
+                <entry key="银行卡" value="987654321"/>
+                <entry key="密码" value="0000000000000"/>
+            </map>
+        </property>
+
+        <!-- set注入 -->
+        <property name="games">
+            <set>
+                <value>原神</value>
+            </set>
+        </property>
+
+        <!-- null注入 -->
+        <!-- 这样也可以；<property name="wife" value=""/> -->
+        <property name="wife">
+            <null/>
+        </property>
+
+        <!-- Properties注入 -->
+        <property name="info">
+            <props>
+                <prop key="Id">20202005005</prop>
+                <prop key="Sex">男</prop>
+                <prop key="Name">Hilda_quan</prop>
+            </props>
+        </property>
+
+    </bean>
+
+</beans>
